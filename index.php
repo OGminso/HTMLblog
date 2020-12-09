@@ -12,7 +12,7 @@ $posts = getPosts();
 
 foreach ($posts as $post) { ?>
 	<div class="container">
-	<div class="post" style="margin-left: 0px;">
+		<div class="post" style="margin-left: 0px;">
 			<div>
 				<h3><?php echo $post['title'] ?></h3>
 				<?php 
@@ -43,6 +43,6 @@ foreach ($posts as $post) { ?>
 
                     ?>
 			</div>
+		</div>
 	</div>
-</div>
-<?php } ?>
+<?php }
