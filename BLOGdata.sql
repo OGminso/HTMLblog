@@ -1,0 +1,105 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 09, 2020 at 10:33 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `blog`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `userID` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `body` text NOT NULL,
+  `created` int(30) NOT NULL,
+  `updated` int(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `userID`, `title`, `body`, `created`, `updated`) VALUES
+(1, 1, 'This is the first Post', '&lt;h1&gt;This is the body for the first post.&lt;/h1&gt;\r\n\r\n&lt;p&gt;here is a cat&lt;/p&gt;\r\n\r\n&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;data:image/jpeg;base64,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&quot; style=&quot;height:148px; width:340px&quot; /&gt;&lt;/p&gt;\r\n', 1607506221, 1607506235),
+(2, 1, 'This is my second post', '&lt;p&gt;Idk what to say here.&lt;/p&gt;\r\n', 1607506258, 0),
+(3, 2, 'This is a blog site', '&lt;h1&gt;This is a blog site where anyone can post if there logged in.&lt;/h1&gt;\r\n\r\n&lt;h2&gt;Features:&lt;/h2&gt;\r\n\r\n&lt;ul&gt;\r\n	&lt;li&gt;login&lt;/li&gt;\r\n	&lt;li&gt;register&lt;/li&gt;\r\n	&lt;li&gt;create posts&lt;/li&gt;\r\n	&lt;li&gt;edit posts&lt;/li&gt;\r\n	&lt;li&gt;delete posts&lt;/li&gt;\r\n	&lt;li&gt;view posts&lt;/li&gt;\r\n	&lt;li&gt;view profiles and there posts&amp;nbsp;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', 1607506389, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `created`) VALUES
+(1, 'Minso', 'minso@blog.com', '$2y$10$9QIepPpVrXHHqfdNOiN2UOzLvI.VEbD4ED2ceIAUldawnoDZjehuC', '2020-12-09 10:29:14'),
+(2, 'blog', 'blog@blog.com', '$2y$10$O2rPhOSJQNyN1OjB9lyOZudhGPH86/b/BbIDYlaY5bx7u7yyVMJL.', '2020-12-09 10:31:19');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

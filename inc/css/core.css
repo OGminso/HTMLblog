@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #D9D9D9;
+    max-width: 100%;
+}
+
+.container {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navbar */
+
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: #B1B1B1;
+}
+
+.navitem {
+    float: left;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navitem a:hover {
+    color: white;
+}
+
+.navtitle {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.navRight {
+    float: right;
+    margin-right: 25px;
+}
+
+/* ViewPost.php style */
+
+.title {
+    font-size: 50px;
+}
+
+.body {
+    width: 100%;
+}
+
+/* Profile.php */
+
+.profileTittle {
+    text-align: center;
+    font-size: 70px;
+}
+
+.profilesubtitle {
+    font-size: 30px;
+}
+
+.profileItem {
+    margin-top: 15px;
+}
+
