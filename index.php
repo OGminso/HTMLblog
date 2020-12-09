@@ -10,7 +10,7 @@ include 'header.php';
 
 $posts = getPosts();
 
-foreach ($posts as $post): ?>
+foreach ($posts as $post) { ?>
 	<div class="container">
 	<div class="post" style="margin-left: 0px;">
 			<div>
@@ -45,4 +45,4 @@ foreach ($posts as $post): ?>
 			</div>
 	</div>
 </div>
-<?php endforeach ?>
+<?php } ?>
