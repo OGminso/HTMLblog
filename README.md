@@ -10,3 +10,9 @@ Features are:
 - delte posts
 - profile page to view user posts
 
+
+default account detials
+format: username/email / password
+
+- minso@blog.com, password
+- blog@blog.com, password
