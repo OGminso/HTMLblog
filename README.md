@@ -11,7 +11,7 @@ Features are:
 - profile page to view user posts
 
 
-default account detials
+default account details
 format: username/email / password
 
 - minso@blog.com, password
