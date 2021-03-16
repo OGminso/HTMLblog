@@ -16,3 +16,6 @@ format: username/email / password
 
 - minso@blog.com, password
 - blog@blog.com, password
+
+LIVE DEMO
+http://demo.minso.me/Blog/
